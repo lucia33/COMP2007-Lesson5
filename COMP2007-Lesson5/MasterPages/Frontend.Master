@@ -1,0 +1,31 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Frontend.master.cs" Inherits="COMP2007_Lesson5.MasterPages.Frontend" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="/Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="/Content/bootstrap-theme.min.css" rel="stylesheet" />
+    <link href="/Content/Styles.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="Container">
+        <form id="form1" runat="server">
+            <div id="PageWrapper">
+                <nav>Menu goes here</nav>
+                <section id="MainContent">
+                    <asp:ContentPlaceHolder ID="cpMainContent" runat="server"></asp:ContentPlaceHolder>
+                </section>
+                <aside id="Sidebar">Sidebar goes here</aside>
+                <footer>Footer goes here</footer>
+            </div>
+        </form>
+    </div>
+    <!-- js lib sect -->
+    <script src="/Scripts/jquery-1.9.1.min.js"></script>
+    <script src="/Scripts/bootstrap.min.js"></script>
+</body>
+</html>
